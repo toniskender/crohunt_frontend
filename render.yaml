@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cro-hunt
+    env: node
+    buildCommand: npm run build
+    startCommand: npm run start
