@@ -12,17 +12,17 @@ export default {
 
 <style scoped>
 footer {
-  background-color: #505b3e; /* Maslinasto zelena pozadina */
-  color: white; /* Bijela boja teksta */
+  background-color: #505b3e; 
+  color: white; 
   text-align: center;
-  padding: 10px 20px; /* Unutarnji razmak */
-  border-top: 2px solid #ccc; /* Gornji okvir */
-  position: relative; /* Relativni položaj */
+  padding: 10px 20px; 
+  border-top: 2px solid #ccc; 
+  position: relative; 
   bottom: 0;
   width: 100%;
 }
 
 footer p {
-  margin: 0; /* Uklanjanje margine za p element */
+  margin: 0; 
 }
 </style>

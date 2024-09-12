@@ -10,6 +10,14 @@
           <li><router-link to="/what-we-offer">What We Offer</router-link></li>
           <li><router-link to="/gallery">Gallery</router-link></li>
           <li><router-link to="/contact">Contact</router-link></li>
+
+         
+          <li v-if="!isLoggedIn"><router-link to="/register">Register</router-link></li>
+          <li v-if="!isLoggedIn"><router-link to="/login">Login</router-link></li>
+
+          
+          <li v-if="isLoggedIn"><router-link to="/calendar">Calendar</router-link></li>
+          <li v-if="isLoggedIn"><a href="#" @click="logout">Logout</a></li>
         </ul>
       </nav>
     </header>
@@ -37,6 +45,30 @@
   </div>
 </template>
 
+<script>
+import { ref } from 'vue';
+
+export default {
+  setup() {
+    const isLoggedIn = ref(!!localStorage.getItem('token'));  
+
+    const logout = () => {
+      localStorage.removeItem('token');  
+      isLoggedIn.value = false;  
+      window.location.href = '/';  
+    };
+
+    return {
+      isLoggedIn,
+      logout
+    };
+  }
+};
+</script>
+
+
+
+
 <style>
 body, html {
   margin: 0;
@@ -51,7 +83,7 @@ body, html {
 }
 
 header {
-  background-color: #505b3e; /* Maslinasto zelena boja */
+  background-color: #505b3e; 
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -69,7 +101,7 @@ nav {
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px; /* Pomakni logo malo desno */
+  padding-left: 20px; 
 }
 
 .logo img {
@@ -95,7 +127,7 @@ nav {
 }
 
 footer {
-  background-color: #505b3e; /* Maslinasto zelena boja */
+  background-color: #505b3e; 
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
@@ -133,7 +165,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: #404b2e; /* Tamnija nijansa maslinasto zelene boje */
+  background-color: #404b2e; 
   padding: 10px 0;
 }
 

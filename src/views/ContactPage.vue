@@ -2,7 +2,7 @@
   <div class="contact">
     <h1>Contact Us</h1>
     <div class="contact-info">
-      <p><strong>Address:</strong> bana Josipa Jelačića 2, Delnice, Croatia</p>
+      <p><strong>Address:</strong> Bana Josipa Jelačića 2, Delnice, Croatia</p>
       <p><strong>Phone:</strong> +385 99 772 3096</p>
       <p><strong>Email:</strong> info@crohunt.com</p>
     </div>
@@ -55,14 +55,14 @@ export default {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #f5f5f5; /* Svijetla pozadina za cijelu stranicu */
+  background-color: #f5f5f5; 
 }
 
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #ffffff; /* Bijela boja za naslov */
-  background-color: #505b3e; /* Maslinasto zelena pozadina za naslov */
+  color: #ffffff; 
+  background-color: #505b3e; 
   padding: 10px;
   border-radius: 5px;
   text-align: center;

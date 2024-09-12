@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <!-- Slika ispod navigacijskog menija -->
+    
     <div class="banner-container">
       <img src="@/assets/images/Pogled.jpg" alt="Banner" class="banner">
     </div>
-    <!-- CRO Hunt i opis -->
+    
     <div class="intro-section">
       <div class="intro-text">
         <h2>CRO Hunt</h2>
@@ -14,11 +14,11 @@
         <p>On behalf of our team, we wish you all a successful hunt – DOBRA KOB!</p>
       </div>
     </div>
-    <!-- Nova slika ispod opisa -->
+    
     <div class="intro-image">
       <img src="@/assets/images/Tumac_ljepsa.jpeg" alt="Intro Image" class="intro-img">
     </div>
-    <!-- Ponuda lova -->
+    
     <div class="section">
       <h2 class="section-title">What We Offer</h2>
       <div class="offerings">
@@ -72,27 +72,27 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .home {
-  padding-top: 0; /* Uklanjanje paddinga na vrhu */
+  padding-top: 0; 
   font-family: 'Roboto', sans-serif;
 }
 
 header {
-  margin: 0; /* Uklonite marginu */
-  padding: 0; /* Uklonite padding */
+  margin: 0; 
+  padding: 0; 
 }
 
 .banner-container {
   display: flex;
   align-items: center;
-  margin: 0; /* Uklonite marginu */
-  padding: 0; /* Uklonite padding */
+  margin: 0; 
+  padding: 0; 
   flex-wrap: wrap;
-  width: 100%; /* Osigurava da kontejner zauzima punu širinu */
+  width: 100%; 
 }
 
 .banner {
-  width: 100%; /* Povećava širinu slike na 100% */
-  height: 773.39px; /* Postavljanje fiksne visine slike */
+  width: 100%; 
+  height: 773.39px; 
   object-fit: cover;
 }
 
@@ -101,7 +101,7 @@ header {
   justify-content: space-between;
   margin: 20px 0;
   padding: 20px;
-  background-color: #505b3e; /* Maslinasto zelena boja */
+  background-color: #505b3e; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -109,17 +109,17 @@ header {
 .intro-text {
   flex: 1;
   font-size: 2.5em;
-  color: #ffffff; /* Bijela boja za tekst */
+  color: #ffffff;
 }
 
 .intro-description {
   flex: 2;
   margin-left: 20px;
   font-size: 1.2em;
-  color: #ffffff; /* Bijela boja za tekst */
+  color: #ffffff; 
 }
 
-/* Stilizacija nove slike */
+
 .intro-image {
   display: flex;
   justify-content: center;
@@ -127,8 +127,8 @@ header {
 }
 
 .intro-img {
-  width: 70%; /* Širina slike koja nije preko cijele stranice */
-  height: 900px; /* Visina slike */
+  width: 70%; 
+  height: 900px; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -152,7 +152,7 @@ header {
   content: '';
   width: 80px;
   height: 4px;
-  background-color: #505b3e; /* Maslinasto zelena boja */
+  background-color: #505b3e; 
   display: block;
   margin: 10px auto 0;
   border-radius: 2px;
@@ -161,21 +161,21 @@ header {
 .offerings {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px; /* Smanjen razmak između slika */
+  gap: 10px; 
   justify-content: center;
-  max-width: 1000px; /* Povećanje maksimalne širine */
+  max-width: 1000px; 
   margin: 0 auto;
 }
 
 .offering {
   position: relative;
-  width: 100%; /* Manja širina slike */
-  height: 300px; /* Manja visina slike */
+  width: 100%; 
+  height: 300px;
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodavanje sjene */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .offering img {
@@ -197,7 +197,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Tamnija pozadina */
+  background-color: rgba(0, 0, 0, 0.5); 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -214,8 +214,8 @@ header {
 }
 
 .last-offering {
-  grid-column: span 2; /* Zadnja opcija zauzima dvije kolone */
-  justify-self: center; /* Centriranje zadnje opcije */
+  grid-column: span 2; 
+  justify-self: center; 
 }
 
 @media (max-width: 768px) {

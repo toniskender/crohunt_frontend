@@ -51,7 +51,7 @@ export default {
         { src: require('@/assets/images/R8.jpeg'), alt: 'Pogled 2' },
         { src: require('@/assets/images/Medvjed_skup.jpeg'), alt: 'Pogled 2' },
         { src: require('@/assets/images/Gams.jpg'), alt: 'Pogled 2' },
-        // Dodajte više slika ovdje
+        
       ],
       visible: false,
       index: 0
@@ -78,21 +78,21 @@ export default {
 .gallery {
   text-align: center;
   padding: 20px;
-  background-color: #f5f5f5; /* Svijetla pozadina za cijelu stranicu */
+  background-color: #f5f5f5; 
 }
 
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #ffffff; /* Bijela boja za naslov */
-  background-color: #505b3e; /* Maslinasto zelena pozadina za naslov */
+  color: #ffffff; 
+  background-color: #505b3e; 
   padding: 10px;
   border-radius: 5px;
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Povećane dimenzije */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
   gap: 20px;
 }
 
@@ -110,8 +110,8 @@ h1 {
 
 .image-item img {
   width: 100%;
-  height: 400px; /* Povećana visina */
-  object-fit: cover; /* Zadržava proporcije i ispunjava okvir */
+  height: 400px; 
+  object-fit: cover;
   display: block;
 }
 </style>

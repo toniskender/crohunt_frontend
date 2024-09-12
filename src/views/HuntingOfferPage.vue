@@ -16,17 +16,17 @@
   </div>
 </template>
 
-<script>
+<script> 
 export default {
   name: 'HuntingOfferPage',
   data() {
     return {
-      showFullDescription: [],
-      offers: [
+      showFullDescription: [], 
+      offers: [                
         {
-          title: 'Bear Hunting',
-          subtitle: 'Ursus arctos',
-          season: '01.03. - 15.05. i 16.09. - 15.12.',
+          title: 'Bear Hunting',                         
+          subtitle: 'Ursus arctos',                     
+          season: '01.03. - 15.05. i 16.09. - 15.12.', 
           shortDescription: 'Bear Hunting in Croatia is an adventure like no other...',
           fullDescription: `Bear Hunting in Croatia is an adventure like no other. 
             The Croatian wilderness is home to the brown bear, a formidable and sought-after game species. 
@@ -87,8 +87,8 @@ export default {
     };
   },
   methods: {
-    toggleDescription(index) {
-      this.showFullDescription[index] = !this.showFullDescription[index];
+    toggleDescription(index) { 
+      this.showFullDescription[index] = !this.showFullDescription[index]; 
     }
   },
   mounted() {
@@ -101,14 +101,14 @@ export default {
 .hunting-offer {
   text-align: center;
   padding: 20px;
-  background-color: #f5f5f5; /* Svijetla pozadina za cijelu stranicu */
+  background-color: #f5f5f5; 
 }
 
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #ffffff; /* Bijela boja za naslov */
-  background-color: #505b3e; /* Maslinasto zelena pozadina za naslov */
+  color: #ffffff; 
+  background-color: #505b3e; 
   padding: 10px;
   border-radius: 5px;
 }
@@ -125,7 +125,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   cursor: pointer;
-  background-color: #ffffff; /* Bijela pozadina za kartice */
+  background-color: #ffffff; 
 }
 
 .offering:hover {
@@ -134,7 +134,7 @@ h1 {
 
 .offering img {
   width: 100%;
-  height: 300px; /* Dimenzije slika */
+  height: 300px; 
   object-fit: cover;
 }
 
@@ -146,7 +146,7 @@ h1 {
 .offering-details h2 {
   font-size: 1.5em;
   margin: 10px 0 5px;
-  color: #2c3e50; /* Tamnija nijansa za naslove */
+  color: #2c3e50; 
 }
 
 .offering-details h3 {

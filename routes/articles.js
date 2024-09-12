@@ -1,14 +1,12 @@
 const router = require('express').Router();
 let Article = require('../models/article.model');
 
-// GET all articles
 router.route('/').get((req, res) => {
   Article.find()
     .then(articles => res.json(articles))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-// POST new article
 router.route('/add').post((req, res) => {
   const { title, content, author } = req.body;
 
@@ -19,7 +17,7 @@ router.route('/add').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-// PUT update article
+
 router.route('/update/:id').put((req, res) => {
   Article.findById(req.params.id)
     .then(article => {
@@ -38,7 +36,7 @@ router.route('/update/:id').put((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-// DELETE article
+
 router.route('/delete/:id').delete((req, res) => {
   Article.findByIdAndDelete(req.params.id)
     .then(article => {

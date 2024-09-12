@@ -10,11 +10,13 @@
     "postinstall": "npm install @vue/cli-service"
   },
   "dependencies": {
-    "axios": "^1.7.0",
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
     "core-js": "^3.8.3",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mongoose": "^8.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.4",
     "vue": "^3.2.13",
     "vue-easy-lightbox": "^1.19.0",
     "vue-router": "^4.0.13"
